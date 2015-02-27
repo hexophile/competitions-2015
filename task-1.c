@@ -25,7 +25,7 @@
 
 const char *FILENAME_UNENCRYPTED	= "tekst.txt";
 const char *FILENAME_ENCRYPTED		= "szyfr.txt";
-const char *FILENAME_OUTPUT			= "odszyfrowane.txt";
+const char *FILENAME_OUTPUT		= "odszyfrowane.txt";
 
 
 const char fMODE_READ[2]	= "r+";
