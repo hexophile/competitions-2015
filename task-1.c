@@ -13,10 +13,19 @@
 #warning "This program has been compiled ONLY by GNU/C."
 #endif
 
+#ifndef __linux
+#warning "OS not supported"
+
+#ifdef __WIN32__
+#define getc_unlocked getc
+#endif
+
+#endif
+
 
 const char *FILENAME_UNENCRYPTED	= "tekst.txt";
 const char *FILENAME_ENCRYPTED		= "szyfr.txt";
-const char *FILENAME_OUTPUT		= "odszyfrowane.txt";
+const char *FILENAME_OUTPUT			= "odszyfrowane.txt";
 
 
 const char fMODE_READ[2]	= "r+";
